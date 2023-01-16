@@ -1,0 +1,20 @@
+.product-main-div {
+  @apply py-10 px-2 bg-yellow-300;
+}
+
+.product-heading {
+  @apply text-lg font-serif font-medium;
+}
+
+.product-card-container {
+  @apply grid grid-cols-1 xl:grid-cols-5 gap-0 px-2;
+}
+
+.error {
+  @apply text-center text-4xl text-red-600 p-52;
+}
+
+.loading {
+  @apply text-center text-5xl
+  text-green-500 p-52;
+}

@@ -1,0 +1,13 @@
+.base {
+  @apply flex justify-center items-center flex-col
+bg-yellow-300  h-[83.25vh];
+}
+
+.welcome {
+  @apply text-4xl capitalize 
+    font-medium;
+}
+
+.ecommerce {
+  @apply text-4xl uppercase font-semibold;
+}

@@ -1,0 +1,23 @@
+.card-container-div {
+  @apply w-[10.5rem] my-3 mx-2 bg-green-200 rounded-md pb-4 text-black overflow-hidden inline-block relative;
+}
+
+.card-img {
+  @apply w-full h-28;
+}
+
+.card-para {
+  @apply py-1 pl-2 font-semibold text-sm;
+}
+
+.card-para-brand {
+  @apply py-1 pl-2 font-semibold text-[12px];
+}
+
+.card-btn-buy {
+  @apply m-2 w-[92%] py-1 text-lg font-medium rounded-lg bg-red-600 text-white;
+}
+
+.card-btn-cart {
+  @apply mx-2 w-[92%] py-1 text-lg font-medium rounded-lg bg-green-600 text-black;
+}

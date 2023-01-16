@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RecoilRoot } from "recoil";
+
+import Welcome from "./Components/Welcome/Welcome";
+import Home from "./Components/Home/Home";
+import "./App.css";
+import Navbar from "./Components/NavBar/Navbar";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import Products from "./Components/Products/Products";
+import Cart from "./Components/Cart/Cart";
+import CartSummary from "./Components/Summary/CartSummary/CartSummary";
+import OrderSummary from "./Components/Summary/OrderSummary/OrderSummary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RecoilRoot>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/Products" element={<Products />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart/CartSummary" element={<CartSummary />} />
+            <Route path="/OrderSummary/:id" element={<OrderSummary />} />
+          </Routes>
+        </BrowserRouter>
+      </RecoilRoot>
     </div>
   );
 }

@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import "Components/Welcome/Welcome.css";
+@import "Components/NavBar/NavBar.css";
+@import "Components/ContactUs/ContactUs.css";
+@import "Components/Products/Products.css";
+@import "Components/Card/Card.css";
+@import "./Components/List/List.css";
+@import "./Components/Home/Home.css";
+@import "./Components/Cart/Cart.css";
+@import "./Components/Summary/CartSummary/CartSummary.css";
+@import "./Components/Summary/OrderSummary/OrderSummary.css";

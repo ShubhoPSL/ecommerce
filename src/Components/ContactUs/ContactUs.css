@@ -1,0 +1,39 @@
+.contact-main {
+  @apply bg-yellow-300 w-full lg:h-full xl:h-[83.25vh] pl-16 md:pl-28 lg:pl-44 pt-16 md:pt-24 lg:pt-32;
+}
+
+.contact-block {
+  @apply inline-block h-[300px] w-[300px] px-5;
+}
+.contact-block2 {
+  @apply inline-block h-[300px] w-[300px] px-6;
+}
+.contact-block3 {
+  @apply inline-block h-[300px] w-[300px] px-5;
+}
+
+.contact-icon {
+  @apply flex h-[60px] w-[60px] bg-blue-300 rounded-full justify-center items-center ml-[95px] mx-2;
+}
+.contact-icon2 {
+  @apply flex h-[60px] w-[60px] bg-blue-300 rounded-full justify-center items-center ml-[95px] mx-3;
+}
+.contact-icon3 {
+  @apply flex h-[60px] w-[60px] bg-blue-300 rounded-full justify-center items-center ml-[95px];
+}
+
+.contact-para {
+  @apply font-extrabold text-lg text-center text-violet-700 uppercase;
+}
+
+.contact-info-1 {
+  @apply font-bold text-base capitalize text-center p-1;
+}
+
+.contact-info-2 {
+  @apply font-normal text-sm capitalize text-center;
+}
+
+.contact-info-3 {
+  @apply font-semibold text-sm text-center;
+}
