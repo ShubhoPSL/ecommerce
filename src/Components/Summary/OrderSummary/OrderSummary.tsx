@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import { useRecoilValue } from "recoil";
-import { SucessIcon } from "../../Icons/Icons";
+import { SucessIcon } from "../../Icons/SuccessIcon";
 import { allProducts } from "../../States/AllProducts";
 
 const OrderSummary = () => {

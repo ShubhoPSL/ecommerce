@@ -41,3 +41,7 @@
 .cart-summary-total {
   @apply font-bold mt-2 my-2;
 }
+
+.cart-summary-done-btn {
+  @apply mx-2 w-[92%] py-1 text-lg font-medium rounded-lg bg-green-600 text-black;
+}

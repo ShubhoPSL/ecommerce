@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing List component should match with snapshot of List module 1`] = `
+<li
+  className="nav-li"
+>
+  <a
+    href="/home"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</li>
+`;

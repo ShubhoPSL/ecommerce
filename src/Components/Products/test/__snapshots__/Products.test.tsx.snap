@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products component is being tested should match with snapshot of Products module 1`] = `
+<div
+  className="loading"
+>
+  Please Wait! Something is cooking up...
+</div>
+`;

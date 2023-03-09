@@ -1,0 +1,12 @@
+.modalWindow {
+  @apply flex flex-col bg-[#fefefe] border w-[30%] justify-center items-center shadow-[8px_8px_8px] m-auto p-5 rounded-[10px] border-solid border-[#888];
+}
+.background {
+  @apply block fixed z-[1] w-full h-full overflow-auto bg-[rgba(212,206,206,0.08)] pt-[100px] left-0 top-0;
+}
+.title {
+  @apply flex items-center flex-col;
+}
+.confirmButton {
+  @apply bg-[seagreen] cursor-pointer mt-[5px] px-[15px] py-[5px] rounded-lg;
+}

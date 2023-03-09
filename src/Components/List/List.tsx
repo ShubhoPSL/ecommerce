@@ -1,11 +1,9 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { Link } from "react-router-dom";
-
 import { listData } from "../DataTypes/listData";
 import { TotalItemsInCart } from "../States/TotalItemsInCart";
-import { CartIcon } from "../Icons/Icons";
-
+import { CartIcon } from "../Icons/CartIcon";
 const List = ({ data }: { data: listData }) => {
   const totalItems = useRecoilValue(TotalItemsInCart);
   return (

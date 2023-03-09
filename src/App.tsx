@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-
 import Welcome from "./Components/Welcome/Welcome";
 import Home from "./Components/Home/Home";
 import "./App.css";

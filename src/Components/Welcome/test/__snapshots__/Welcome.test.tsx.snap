@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Page Component Testing should match with snapshot of welcome module 1`] = `
+<div
+  className="base"
+>
+  <p
+    className="welcome"
+  >
+    Welcome To 
+  </p>
+  <h1
+    className="ecommerce"
+  >
+    ShopKart
+  </h1>
+</div>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar is being tested should match with snapshot of Navbar module 1`] = `
+<nav
+  className="main"
+>
+  <div
+    className="brand-div"
+  >
+    <h2
+      className="brand-heading"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <h1
+          className="brand"
+        >
+          ShopKart
+        </h1>
+      </a>
+    </h2>
+  </div>
+  <div
+    className="menu"
+  >
+    <ul
+      className="list"
+    >
+      <div>
+        List - 
+        Home
+      </div>
+      <div>
+        List - 
+        Products
+      </div>
+      <div>
+        List - 
+        Contact Us
+      </div>
+      <div>
+        List - 
+        Cart
+      </div>
+    </ul>
+  </div>
+</nav>
+`;

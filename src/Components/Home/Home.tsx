@@ -6,10 +6,10 @@ function Home() {
     <div className="home-container">
       <p className="home-body">
         ShopKart is the fastest growing e-commerce platform of US! Launched in
-        2019, it has delivered over 70 million+ products and even during the
-        Covid-19 Lockdown. You can shop anything you want, including daily
-        groceries and medicines. In short, a one-stop shop for everything that
-        you need and craved for!
+        2019, it has delivered over 70 million products also during the Covid-19
+        Lockdown. You can shop anything you want, including daily groceries and
+        medicines. In short, a one-stop shop for everything that you need and
+        craved for!
       </p>
       <br />
       <h1 className="catchy-tagline">What are you waiting for?!</h1>

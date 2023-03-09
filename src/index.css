@@ -12,3 +12,4 @@
 @import "./Components/Cart/Cart.css";
 @import "./Components/Summary/CartSummary/CartSummary.css";
 @import "./Components/Summary/OrderSummary/OrderSummary.css";
+@import "./Components/Modal/Modal.css";

@@ -1,14 +1,15 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
-
+import Modal from "../Modal/Modal";
 import { CartProducts } from "../DataTypes/CartProducts";
 import { Product } from "../DataTypes/Product";
 import { cartItems } from "../States/CartItems";
+import { modal } from "../States/Modal";
 
 function Card(props: { product: Product }) {
   const { product } = props;
   const [cartItem, setCartItem] = useRecoilState(cartItems);
+  const [newModal, setModal] = useRecoilState(modal);
   const handleAddtoCart = () => {
     const indexInCart = cartItem.findIndex((item) => item.id === product.id);
     let newItem: CartProducts;
@@ -28,22 +29,29 @@ function Card(props: { product: Product }) {
           newItem,
           ...cartItem.slice(indexInCart + 1),
         ]);
-    alert("Item added to Cart!");
+    setModal(true);
   };
 
   return (
-    <div className="card-container-div">
-      <img src={product.image} alt="Cannot be displayed" className="card-img" />
-      <p className="card-para">{product.title}</p>
-      <p className="card-para">Category: {product.category}</p>
-      <p className="card-para">Price: ${product.price}</p>
-      <Link to={`/OrderSummary/${product.id}`}>
-        <button className="card-btn-buy">Buy Now</button>
-      </Link>
-      <button className="card-btn-cart" onClick={() => handleAddtoCart()}>
-        Add to Cart
-      </button>
-    </div>
+    <>
+      <div className="card-container-div">
+        <img
+          src={product.image}
+          alt="Cannot be displayed"
+          className="card-img"
+        />
+        <p className="card-para">{product.title}</p>
+        <p className="card-para">Category: {product.category}</p>
+        <p className="card-para">Price: ${product.price}</p>
+        <Link to={`/OrderSummary/${product.id}`}>
+          <button className="card-btn-buy">Buy Now</button>
+        </Link>
+        <button className="card-btn-cart" onClick={() => handleAddtoCart()}>
+          Add to Cart
+        </button>
+      </div>
+      {newModal ? <Modal /> : null}
+    </>
   );
 }
 

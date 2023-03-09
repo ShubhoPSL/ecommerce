@@ -1,17 +1,18 @@
 import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { cartProductArray } from "../DataTypes/CartProductArray";
-import { useLocalStorage } from "../../LocalStorage/LocalStorage";
+// import { useLocalStorage } from "../../LocalStorage/LocalStorage";
 
 import { cartItems } from "../States/CartItems";
 import { CartTotal } from "../States/CartTotal";
-import { DeleteIcon, AddIcon } from "../Icons/Icons";
+import { DeleteIcon } from "../Icons/DeleteIcon";
+import { AddIcon } from "../Icons/AddIcon";
 import { Link } from "react-router-dom";
 
 function Cart() {
   const [prods, setProds] = useRecoilState(cartItems);
   const totalAmount = useRecoilValue(CartTotal);
-  const [cartItem, setCartItem] = useLocalStorage<cartProductArray>("hi", []);
+  // const [cartItem, setCartItem] = useLocalStorage<cartProductArray>("hi", []);
 
   function handleAddProduct(index: number) {
     return (event: React.MouseEvent<HTMLElement>) => {
