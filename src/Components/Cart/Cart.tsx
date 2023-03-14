@@ -69,10 +69,7 @@ function Cart() {
                       <span className="normal">Product Name:</span>
                       {item.title}
                     </p>
-                    <p>
-                      <span className="normal">Product Category:</span>
-                      {item.category}
-                    </p>
+
                     <p>
                       <span className="normal">Product Price:</span>$
                       {item.price}

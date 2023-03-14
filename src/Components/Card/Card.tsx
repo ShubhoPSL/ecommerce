@@ -10,6 +10,7 @@ function Card(props: { product: Product }) {
   const { product } = props;
   const [cartItem, setCartItem] = useRecoilState(cartItems);
   const [newModal, setModal] = useRecoilState(modal);
+  const image1 = "data:image/jpeg;base64," + product.image;
   const handleAddtoCart = () => {
     const indexInCart = cartItem.findIndex((item) => item.id === product.id);
     let newItem: CartProducts;
@@ -35,13 +36,8 @@ function Card(props: { product: Product }) {
   return (
     <>
       <div className="card-container-div">
-        <img
-          src={product.image}
-          alt="Cannot be displayed"
-          className="card-img"
-        />
+        <img src={image1} alt="Cannot be displayed" className="card-img" />
         <p className="card-para">{product.title}</p>
-        <p className="card-para">Category: {product.category}</p>
         <p className="card-para">Price: ${product.price}</p>
         <Link to={`/OrderSummary/${product.id}`}>
           <button className="card-btn-buy">Buy Now</button>

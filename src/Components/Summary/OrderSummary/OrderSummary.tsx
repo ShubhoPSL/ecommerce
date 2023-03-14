@@ -28,10 +28,6 @@ const OrderSummary = () => {
               {product[0].title}
             </p>
             <p>
-              <span className="bold">Product Category: </span>
-              {product[0].category}
-            </p>
-            <p>
               <span className="bold">Product Price: </span>
               {product[0].price}
             </p>

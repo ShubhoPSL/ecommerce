@@ -7,7 +7,7 @@ export const cartItems = atom({
         id: 0,
         title : "",
         price: 0,
-        category: "",
+        
         image: "",
         count: 0,
         } 
