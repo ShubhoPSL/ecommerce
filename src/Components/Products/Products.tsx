@@ -9,7 +9,7 @@ function Products() {
   const [loading, setLoading] = useState(true);
 
   function fetchProducts() {
-    fetch("https://app-common-productapi.azurewebsites.net/product/fetch")
+    fetch("https://fakestoreapi.com/products?limit=15")
       .then((res) => res.json())
       .then(
         (data) => {

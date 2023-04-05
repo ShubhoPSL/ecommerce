@@ -10,7 +10,7 @@ function Card(props: { product: Product }) {
   const { product } = props;
   const [cartItem, setCartItem] = useRecoilState(cartItems);
   const [newModal, setModal] = useRecoilState(modal);
-  const image1 = "data:image/jpeg;base64," + product.image;
+  const image1 = product.image;
   const handleAddtoCart = () => {
     const indexInCart = cartItem.findIndex((item) => item.id === product.id);
     let newItem: CartProducts;
